@@ -1,0 +1,38 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply h-full;
+}
+
+body {
+	@apply bg-zinc-900 text-zinc-50;
+}
+
+button {
+	@apply px-2.5 py-3 font-medium text-lg bg-emerald-400 text-zinc-900 rounded-md mt-4 hover:bg-emerald-500 transition-all duration-200 ease-in-out;
+}
+
+label {
+	@apply pb-2 text-lg;
+}
+
+textarea {
+	@apply rounded-md p-3 text-zinc-900;
+}
+h1 {
+	@apply text-5xl font-semibold;
+}
+h2 {
+	@apply text-3xl font-medium pb-1;
+}
+p {
+	@apply text-lg;
+}
+
+form {
+	@apply flex flex-col pt-8 max-w-lg w-full;
+}
